@@ -1,8 +1,6 @@
-import FileTree from './fileTree';
-
+import FileTree from "./fileTree";
 export function createFileTree(input) {
   const fileTree = new FileTree();
-
   for (const inputNode of input) {
     const parentNode = inputNode.parentId
       ? fileTree.findNodeById(inputNode.parentId)
@@ -21,7 +19,7 @@ export function createFileTree(input) {
       continue;
     }
     const node = fileTree.findNodeById(inputNode.id);
-    const parentNode = fileTree.findNodeById(inputNode.parentId)
+    const parentNode = fileTree.findNodeById(inputNode.parentId);
     parentNode.addChild(node);
   }
 
@@ -30,10 +28,9 @@ export function createFileTree(input) {
       continue;
     }
     const node = fileTree.findNodeById(inputNode.id);
-    const parentNode = fileTree.findNodeById(inputNode.parentId)
+    const parentNode = fileTree.findNodeById(inputNode.parentId);
     parentNode.addChild(node);
   }
 
   return fileTree;
 }
-
