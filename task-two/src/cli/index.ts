@@ -1,9 +1,10 @@
 import { Command } from 'commander';
 import { sync } from 'glob';
 import chalk from 'chalk';
+
 import path from 'path';
 
-import { analysis, validation } from '';
+import { analysis, validation } from '..';
 
 /* eslint-disable-next-line @typescript-eslint/no-var-requires */
 const { version } = require('../../package.json');
