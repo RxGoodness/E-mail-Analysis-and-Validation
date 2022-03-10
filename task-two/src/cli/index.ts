@@ -1,7 +1,6 @@
 import { Command } from 'commander';
 import { sync } from 'glob';
 import chalk from 'chalk';
-
 import path from 'path';
 
 import { analysis, validation } from '..';
