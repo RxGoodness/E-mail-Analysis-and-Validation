@@ -16,5 +16,24 @@ export function createFileTree(input) {
     );
   }
 
+  for (const inputNode of input) {
+    if (!inputNode.parentId) {
+      continue;
+    }
+    const node = fileTree.findNodeById(inputNode.id);
+    const parentNode = fileTree.findNodeById(inputNode.parentId)
+    parentNode.addChild(node);
+  }
+
+  for (const inputNode of input) {
+    if (!inputNode.parentId) {
+      continue;
+    }
+    const node = fileTree.findNodeById(inputNode.id);
+    const parentNode = fileTree.findNodeById(inputNode.parentId)
+    parentNode.addChild(node);
+  }
+
   return fileTree;
 }
+

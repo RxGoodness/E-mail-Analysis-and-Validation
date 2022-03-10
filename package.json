@@ -1,0 +1,23 @@
+{
+  "name": "week-4-node-010-rxgoodness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decadevs/week-4-node-010-RxGoodness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decadevs/week-4-node-010-RxGoodness/issues"
+  },
+  "homepage": "https://github.com/decadevs/week-4-node-010-RxGoodness#readme",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
