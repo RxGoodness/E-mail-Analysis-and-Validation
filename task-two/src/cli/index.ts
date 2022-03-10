@@ -75,4 +75,3 @@ function analyseEmails(input: string, output: string) {
 
   analysis(inputFiles, outputFile);
 }
-
