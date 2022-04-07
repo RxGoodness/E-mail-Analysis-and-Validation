@@ -94,8 +94,11 @@ async function analyseFiles(inputPaths: string[], outputPath: string) {
       else reject('Data not found');
     });
   });
+
   const email = await data;
-  const emailArr = JSON.stringify(email).split('\\n').sort();
+  console.log(email)
+  const emailArr = JSON.stringify(email).split("\\n");
+  console.log(emailArr);
   emailArr.shift();
   emailArr.shift();
 
@@ -138,7 +141,7 @@ async function analyseFiles(inputPaths: string[], outputPath: string) {
     'utf8',
     (err) => {
       if (err) {
-        return console.log(err);
+        return "There is an error somewhere"
       }
     },
   );
@@ -148,6 +151,6 @@ analyseFiles(
   [
     '/Users/decagon/Documents/Week4Task/week-4-node-010-RxGoodness/task-two/fixtures/inputs/small-sample.csv',
   ],
-  'report-analysis.json',
+  'Toheeb.json',
 );
 export default analyseFiles;

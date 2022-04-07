@@ -100,6 +100,6 @@ validateEmailAddresses(
   [
     '/Users/decagon/Documents/Week4Task/week-4-node-010-RxGoodness/task-two/fixtures/inputs/small-sample.csv',
   ],
-  'outputs',
+  'Toheeb',
 );
 export default validateEmailAddresses;
