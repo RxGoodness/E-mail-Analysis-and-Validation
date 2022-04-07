@@ -139,6 +139,7 @@ async function analyseFiles(inputPaths: string[], outputPath: string) {
     resolveOutPath,
     JSON.stringify(resultOutput, null, 2),
     'utf8',
+    
     (err) => {
       if (err) {
         return "There is an error somewhere"
